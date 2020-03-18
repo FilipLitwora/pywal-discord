@@ -9,10 +9,7 @@
  linux
 #### Installation:
 ```
-mkdir ~/.config/pywal-discord
-
-cp config/* ~/.config/pywal-discord
-
+./install
 ```
 ### Screenshots:
 ![1](https://github.com/FilipLitwora/pywal-discord/blob/master/screenshots/2020-03-18_14-27.png)
