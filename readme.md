@@ -1,10 +1,13 @@
-#### usage: 
+# Pywal-discord
+
+#### Usage: 
 ./pywal-discord
-#### requires: 
-installed better discord
-#### works on: 
+#### Requires: 
+- installed better discord
+- pywal
+#### Works on: 
  linux
-#### installation:
+#### Installation:
 ```
 mkdir ~/.config/pywal-discord
 
