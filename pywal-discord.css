@@ -1,0 +1,49 @@
+/**  colors will come from .cache/wal/colors.css as variables defined in :root
+ *  see: cat $HOME/.cache/wal/colors.css
+*/
+.scroller-2FKFPG.systemPad-3UxEGl.scroller-2TZvBN.da-scroller.da-systemPad,
+.scroller-2FKFPG.da-scroller.systemPad-3UxEGl.da-systemPad.members-1998pB.da-members,
+.scroller-2FKFPG.da-scroller.systemPad-3UxEGl.da-systemPad.scroller-1JbKMe,
+.container-3baos1.da-container,
+.form-2fGMdU.da-form,
+.title-3qD0b-.da-title.container-1r6BKw.da-container.themed-ANHk51.da-themed,
+.scroller-2FKFPG.da-scroller.systemPad-3UxEGl.da-systemPad.messages-3amgkR.scroller-3sQKXg.da-scroller,
+.searchBar-6Kv8R2.da-searchBar,
+.content-1o0f9g.da-content,
+.appMount-3lHmkl.bda-dark.da-appMount,
+.header-2o-2hj.da-header,
+.scroller-2FKFPG.da-scroller.systemPad-3UxEGl.da-systemPad.scroller-2wx7Hm.da-scroller
+{
+  background-color: var(--background) !important;
+}
+
+.toolbar-1t6TWx.da-toolbar svg,
+.searchBarComponent-32dTOx.da-searchBarComponent {
+  color: var(--color1) !important;
+}
+/* input */
+.inner-MADQqc.da-inner{
+  background-color: var(--foreground) !important;
+}
+
+
+/* chat messages with embeded html  */
+.grid-1nZz7S.da-grid.hasThumbnail-3FJf1w.da-hasThumbnail {
+  background-color: var(--background) !important;
+  filter: brightness(90%);
+}
+/* add and search server buttons */
+.circleIconButton-jET_ig.da-circleIconButton{
+  background-color: var(--foreground) !important;
+}
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: red !important;
+}
