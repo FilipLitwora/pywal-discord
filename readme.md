@@ -6,5 +6,6 @@ installed better discord
 linux
 ## installation:
 > mkdir ~/.config/pywal-discord
+
 > cp config/* ~/.config/pywal-discord
 
