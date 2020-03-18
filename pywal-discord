@@ -1,4 +1,4 @@
 #! /bin/bash
 
-cat $PWD/meta.css $HOME/.cache/wal/colors.css $PWD/pywal-discord.css > $HOME/.config/BetterDiscord/themes/pywal-discord.theme.css
+cat $HOME/.config/pywal-discord/meta.css $HOME/.cache/wal/colors.css $HOME/.config/pywal-discord/pywal-discord.css > $HOME/.config/BetterDiscord/themes/pywal-discord.theme.css
 
