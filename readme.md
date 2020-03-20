@@ -12,5 +12,5 @@
 ./install
 ```
 ### Screenshots:
-![1](https://github.com/FilipLitwora/pywal-discord/blob/master/screenshots/2020-03-18_14-27.png)
-![2](https://github.com/FilipLitwora/pywal-discord/blob/master/screenshots/2020-03-18_14-28.png)
+![1](https://raw.githubusercontent.com/FilipLitwora/pywal-discord/master/screenshots/1.png)
+![2](https://raw.githubusercontent.com/FilipLitwora/pywal-discord/master/screenshots/2.png)

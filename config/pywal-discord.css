@@ -10,6 +10,8 @@
 .container-3baos1.da-container,
 /* background of message separator */
 .content-1o0f9g.da-content,
+/* server header */
+.header-2o-2hj.da-header,
 /* video background */
 .videoBackground-3AY_fu.da-videoBackground,
 /* settings background */
@@ -20,7 +22,7 @@
 .search-36MZv-.da-search .search-2oPWTC.da-search .searchBar-3dMhjb.da-searchBar,
 /* better discord settings menu */
 .scroller-2FKFPG.firefoxFixScrollFlex-cnI2ix.contentRegionScroller-26nc1e.content-region-scroller.scroller {
-  background-color: var(--background) !important;
+  background-color: var(--background);
 }
 
 /* name of server */
@@ -36,7 +38,7 @@
       rgba(255, 255, 255, 0.05),
       rgba(255, 255, 255, 0.05)
     ),
-    var(--background) !important;
+    var(--background);
   /* this linear-gradient thing is a trick to change color of --background just slightly, 
    * if you know better way to do this pls let me know */
 }
@@ -50,7 +52,7 @@
       rgba(255, 255, 255, 0.1),
       rgba(255, 255, 255, 0.1)
     ),
-    var(--background) !important;
+    var(--background);
 }
 /* top-right search placeholder */
 .searchBar-3dMhjb.da-searchBar .DraftEditor-root .public-DraftEditorPlaceholder-root,
@@ -61,26 +63,25 @@
 .iconWrapper-2OrFZ1.da-iconWrapper svg,
 /* Find or start a conversation text */
 .searchBarComponent-32dTOx.da-searchBarComponent {
-  color: var(--color1) !important;
+  color: var(--color1);
 }
 /* input */
 .inner-MADQqc.da-inner,
 input,
 .scrollableContainer-2NUZem.webkit-HjD9Er.da-webkit {
- background: linear-gradient(
+  background: linear-gradient(
       rgba(255, 255, 255, 0.15),
       rgba(255, 255, 255, 0.15)
     ),
-    var(--background) !important;
-
+    var(--background);
 }
 
 /* chat messages with embeded html  */
 .grid-1nZz7S.da-grid.hasThumbnail-3FJf1w.da-hasThumbnail {
-  background-color: var(--background) !important;
+  background-color: var(--background);
   filter: brightness(90%);
 }
 /* add and search server buttons */
 .circleIconButton-jET_ig.da-circleIconButton {
-  background-color: var(--foreground) !important;
+  background-color: var(--foreground);
 }
