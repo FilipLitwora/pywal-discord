@@ -21,10 +21,15 @@
 /* top-right search bar */
 .search-36MZv-.da-search .search-2oPWTC.da-search .searchBar-3dMhjb.da-searchBar,
 /* better discord settings menu */
-.scroller-2FKFPG.firefoxFixScrollFlex-cnI2ix.contentRegionScroller-26nc1e.content-region-scroller.scroller {
-  background-color: var(--background);
+.scroller-2FKFPG.firefoxFixScrollFlex-cnI2ix.contentRegionScroller-26nc1e.content-region-scroller.scroller, 
+/* user Popout */
+/* input bg */
+.footer-1fjuF6.da-footer,
+/* avatar bg */
+.flex-1xMQg5.flex-1O1GKY.da-flex.da-flex.vertical-V37hAW.flex-1O1GKY.directionColumn-35P_nr.justifyCenter-3D2jYp.alignCenter-1dQNNs.noWrap-3jynv6.headerTop-3C2Zn0.da-headerTop
+{
+  background-color: var(--background) ;
 }
-
 /* name of server */
 .container-1r6BKw.da-container.themed-ANHk51.da-themed,
 .children-19S4PO.da-children::after,
@@ -32,8 +37,13 @@
 .searchBar-6Kv8R2.da-searchBar,
 /* mebers of group chat  */
 .scroller-2FKFPG.da-scroller.systemPad-3UxEGl.da-systemPad.members-1998pB.da-members,
+/* user poput quick message input */
+.quickMessage-2XpSaN.da-quickMessage.quickMessage-1yeL4E.da-quickMessage,
 /* private messages */
-.scroller-2FKFPG.da-scroller.systemPad-3UxEGl.da-systemPad.scroller-1JbKMe {
+.scroller-2FKFPG.da-scroller.systemPad-3UxEGl.da-systemPad.scroller-1JbKMe,
+/* modal when click channel name */
+.flex-1xMQg5.flex-1O1GKY.da-flex.da-flex.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignCenter-1dQNNs.noWrap-3jynv6.header-2tA9Os.da-header.header-1TKi98.da-header
+{
   background: linear-gradient(
       rgba(255, 255, 255, 0.05),
       rgba(255, 255, 255, 0.05)
@@ -61,6 +71,8 @@
 .toolbar-1t6TWx.da-toolbar svg,
 /* icon to the left of name of the server */
 .iconWrapper-2OrFZ1.da-iconWrapper svg,
+/* user poput quick message input */
+.quickMessage-2XpSaN.da-quickMessage.quickMessage-1yeL4E.da-quickMessage::placeholder,
 /* Find or start a conversation text */
 .searchBarComponent-32dTOx.da-searchBarComponent {
   color: var(--color1);
