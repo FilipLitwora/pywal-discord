@@ -16,4 +16,5 @@ Pywal-discord is a tool that makes and applies theme to discord (using <a href="
 cdpython-pywal
 ./install
 ```
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IqXWG9af9n8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Watch the video](https://i.ytimg.com/vi/IqXWG9af9n8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCY_TjGrp1jbKiCsxFqwcTCV20nNg)](vhttps://youtu.be/IqXWG9af9n8)
+
