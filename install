@@ -1,4 +1,10 @@
 #! /bin/bash
+
+if [ -e $HOME/.config/pywal-discord ]
+then
+	rm -r $HOME/.config/pywal-discord
+fi
+
 mkdir $HOME/.config/pywal-discord
 cp ./config/* $HOME/.config/pywal-discord
-
+./pywal-discord
