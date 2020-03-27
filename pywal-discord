@@ -1,4 +1,7 @@
-#! /bin/bash
+#!/bin/bash
+theme="pywal-discord.css"
+[[ $1 == "multi" ]] && theme="pywal-discord-multi.css"
+echo $theme
 cp ./config/* $HOME/.config/pywal-discord
-cat $HOME/.config/pywal-discord/meta.css $HOME/.cache/wal/colors.css $HOME/.config/pywal-discord/pywal-discord.css > $HOME/.config/pywal-discord/pywal-discord.theme.css
+cat $HOME/.config/pywal-discord/meta.css $HOME/.cache/wal/colors.css $HOME/.config/pywal-discord/$theme > $HOME/.config/pywal-discord/pywal-discord.theme.css
 cp $HOME/.config/pywal-discord/pywal-discord.theme.css $HOME/.config/BetterDiscord/themes
