@@ -1,6 +1,6 @@
 #!/bin/bash
 theme="pywal-discord.css"
-[[ $1 == "multi" ]] && theme="pywal-discord-multi.css"
+[[ $1 == "abou" ]] && theme="pywal-discord-abou.css"
 echo $theme
 cp ./config/* $HOME/.config/pywal-discord
 cat $HOME/.config/pywal-discord/meta.css $HOME/.cache/wal/colors.css $HOME/.config/pywal-discord/$theme > $HOME/.config/pywal-discord/pywal-discord.theme.css
