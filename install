@@ -7,4 +7,3 @@ fi
 
 mkdir $HOME/.config/pywal-discord
 cp ./config/* $HOME/.config/pywal-discord
-./pywal-discord
