@@ -1,7 +1,24 @@
 #!/bin/bash
-theme="pywal-discord.css"
-[[ $1 == "abou" ]] && theme="pywal-discord-abou.css"
+path='$HOME/.config/BetterDiscord/themes'
+theme="default"
+print_usage() {
+  echo "Usage: $0 [-t theme] [-p path]"
+  echo "-t theme                    Available: [$theme,abou,glasscord]"
+  echo "-p path/to/folder/or/file   Default $path, (use when using different loader than BD"
+}
+
+while getopts 'p:vt:vh' flag; do
+  case "${flag}" in
+    p) path="${OPTARG}" ;;
+    t) theme="${OPTARG}" ;;
+    h) print_usage ;;
+    *) print_usage 
+       exit 1 ;;
+  esac
+done
+
 echo $theme
-cp ./config/* $HOME/.config/pywal-discord
-cat $HOME/.config/pywal-discord/meta.css $HOME/.cache/wal/colors.css $HOME/.config/pywal-discord/$theme > $HOME/.config/pywal-discord/pywal-discord.theme.css
-cp $HOME/.config/pywal-discord/pywal-discord.theme.css $HOME/.config/BetterDiscord/themes
+echo $path
+#cp ./config/* $HOME/.config/pywal-discord
+#cat $HOME/.config/pywal-discord/meta.css $HOME/.cache/wal/colors.css $HOME/.config/pywal-discord/pywal-discord-$theme.css > $HOME/.config/pywal-discord/pywal-discord-$theme.theme.css
+#cp $HOME/.config/pywal-discord/pywal-discord.theme.css $path 
