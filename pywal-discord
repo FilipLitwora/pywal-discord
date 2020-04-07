@@ -3,7 +3,7 @@ path='$HOME/.config/BetterDiscord/themes'
 theme="default"
 print_usage() {
   echo "Usage: $0 [-t theme] [-p path]"
-  echo "-t theme                    Available: [$theme,abou,glasscord]"
+  echo "-t theme                    Available: [$theme,abou]"
   echo "-p path/to/folder/or/file   Default $path, (use when using different loader than BD"
 }
 
