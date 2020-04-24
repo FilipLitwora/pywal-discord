@@ -1,5 +1,5 @@
 #!/bin/bash
-path='$HOME/.config/BetterDiscord/themes'
+path="$HOME/.config/BetterDiscord/themes"
 theme="default"
 print_usage() {
   echo "Usage: $0 [-t theme] [-p path]"
