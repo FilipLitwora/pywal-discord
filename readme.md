@@ -12,7 +12,7 @@ Pywal-discord is a tool that makes and applies theme to discord with colors gene
 cd python-pywal
 ./install
 ```
-[![gif](https://gifs.com/gif/out-q7kllp)](https://www.youtube.com/watch?v=HZ7CXAt3N2Y)
+[![gif](https://j.gifs.com/q7kllp.gif)](https://www.youtube.com/watch?v=HZ7CXAt3N2Y)
 ### Theme made by <a href="https://github.com/abou123" target="_blank">abou123</a>
 to use this theme 
 ```
