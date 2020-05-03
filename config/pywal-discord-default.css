@@ -1,100 +1,204 @@
-/**  colors will come from .cache/wal/colors.css as variables defined in :root
+/**  colors will come from .cache/wa l/colors.css as variables defined in :root
  *  see: cat $HOME/.cache/wal/colors.css
 */
 
-
-/* Left most element */
-.scroller-2FKFPG.systemPad-3UxEGl.scroller-2TZvBN.da-scroller.da-systemPad,
-/* Ping, connection status, hang up button  */
-.container-1giJp5.da-container,
-/* Your nickname, avatar n' stuff  */
-.container-3baos1.da-container,
-/* background of message separator */
-.content-1o0f9g.da-content,
-/* server header */
-.header-2o-2hj.da-header,
-/* video background */
-.videoBackground-3AY_fu.da-videoBackground,
-/* settings background */
-.scroller-2FKFPG.da-scroller.systemPad-3UxEGl.da-systemPad,
-/* find or start conversation button */
-.searchBarComponent-32dTOx.da-searchBarComponent,
-/* top-right search bar */
-.search-36MZv-.da-search .search-2oPWTC.da-search .searchBar-3dMhjb.da-searchBar,
-/* better discord settings menu */
-.scroller-2FKFPG.firefoxFixScrollFlex-cnI2ix.contentRegionScroller-26nc1e.content-region-scroller.scroller, 
-/* user Popout */
-/* input bg */
-.footer-1fjuF6.da-footer,
-/* avatar bg */
-.flex-1xMQg5.flex-1O1GKY.da-flex.da-flex.vertical-V37hAW.flex-1O1GKY.directionColumn-35P_nr.justifyCenter-3D2jYp.alignCenter-1dQNNs.noWrap-3jynv6.headerTop-3C2Zn0.da-headerTop
-{
-  background-color: var(--background);
-}
-/* name of server */
-.container-1r6BKw.da-container.themed-ANHk51.da-themed,
-.children-19S4PO.da-children::after,
-/* find or start conversation background */ 
-.searchBar-6Kv8R2.da-searchBar,
-/* mebers of group chat  */
-.scroller-2FKFPG.da-scroller.systemPad-3UxEGl.da-systemPad.members-1998pB.da-members,
-/* user poput quick message input */
-.quickMessage-2XpSaN.da-quickMessage.quickMessage-1yeL4E.da-quickMessage,
-/* private messages */
-.scroller-2FKFPG.da-scroller.systemPad-3UxEGl.da-systemPad.scroller-1JbKMe,
-/* modal when click channel name */
-.flex-1xMQg5.flex-1O1GKY.da-flex.da-flex.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignCenter-1dQNNs.noWrap-3jynv6.header-2tA9Os.da-header.header-1TKi98.da-header
-{
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0.05)
+element {
+    font-size: 100%;
+} /* end element */
+:root {
+    /* Yeah, I know lightbg is actually darker than darkbg but whatever
+     * change & pull it if you wish */
+ --lightbg: linear-gradient(
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.06)
     ),
     var(--background);
-  /* this linear-gradient thing is a trick to change color of --background just slightly, 
-   * if you know better way to do this pls let me know */
-}
-
-/* area behind chat input*/
-.form-2fGMdU.da-form,
-.form-2fGMdU.da-form::before,
-/* background of messages */
-.scroller-2FKFPG.da-scroller.systemPad-3UxEGl.da-systemPad.messages-3amgkR.scroller-3sQKXg.da-scroller {
-  background: linear-gradient(
+--darkbg: linear-gradient(
       rgba(255, 255, 255, 0.1),
       rgba(255, 255, 255, 0.1)
     ),
     var(--background);
 }
-/* top-right search placeholder */
-.searchBar-3dMhjb.da-searchBar .DraftEditor-root .public-DraftEditorPlaceholder-root,
-.notranslate.public-DraftEditor-content div ,
-/* toolbar: call , video call, pin etc */
-.toolbar-1t6TWx.da-toolbar svg,
-/* icon to the left of name of the server */
-.iconWrapper-2OrFZ1.da-iconWrapper svg,
-/* user poput quick message input */
-.quickMessage-2XpSaN.da-quickMessage.quickMessage-1yeL4E.da-quickMessage::placeholder,
-/* Find or start a conversation text */
-.searchBarComponent-32dTOx.da-searchBarComponent {
-  color: var(--color1);
-}
-/* input */
-.inner-MADQqc.da-inner,
-input,
-.scrollableContainer-2NUZem.webkit-HjD9Er.da-webkit {
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.15),
-      rgba(255, 255, 255, 0.15)
-    ),
-    var(--background);
-}
+.theme-dark {
+    --header-primary: var(--foreground);
+    --header-secondary: var(--color7);
+    --text-normal: var(--color7);
+    --text-muted: var(--color7);
+    --text-link: var(--color12);
+    --channels-default: var(--foreground);
+    --interactive-normal: var(--foreground);
+    --interactive-hover: var(--foreground);
+    --interactive-active: var(--foreground);
+    --interactive-muted: var(--color7);
+    --background-primary: var(--background);
+    --background-secondary: var(--lightbg);
+    --background-secondary-alt: var(--darkbg);
+    --background-tertiary: var(--background);
+    --background-accent: var(--background);
+    --background-floating: var(--background);
+    --background-mobile-primary: var(--background);
+    --background-mobile-secondary: var(--color8);
+    --background-modifier-hover: rgba(79,84,92,0.16);
+    --background-modifier-active: rgba(79,84,92,0.24);
+    --background-modifier-selected: rgba(79,84,92,0.32);
+    --background-modifier-accent: hsla(0,0%,100%,0.06);
+    --background-mentioned: rgba(250,166,26,0.05);
+    --background-mentioned-hover: rgba(250,166,26,0.08);
+    --background-message-hover: rgba(4,4,5,0.07);
+    --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+    --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+    --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+    --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+    --logo-primary: #fff;
+    --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    --channeltextarea-background: var(--color8);
+    --activity-card-background: #ff0000;
+    --textbox-markdown-syntax: var(--foreground);
+    --deprecated-card-bg: rgba(32,34,37,0.6);
+    --deprecated-card-editable-bg: rgba(32,34,37,0.3);
+    --deprecated-store-bg: #36393f;
+    --deprecated-quickswitcher-input-background: var(--color8);
+    --deprecated-quickswitcher-input-placeholder: var(--color7);
+    --deprecated-text-input-bg: rgba(0,0,0,0.1);
+    --deprecated-text-input-border: rgba(0,0,0,0.3);
+    --deprecated-text-input-border-hover: #040405;
+    --deprecated-text-input-border-disabled: #202225;
+    --deprecated-text-input-prefix: #dcddde;
+} /* end .theme-dark */
 
-/* chat messages with embeded html  */
-.grid-1nZz7S.da-grid.hasThumbnail-3FJf1w.da-hasThumbnail {
-  background-color: var(--background);
-  filter: brightness(90%);
-}
-/* add and search server buttons */
-.circleIconButton-jET_ig.da-circleIconButton {
-  background-color: var(--foreground);
-}
+.theme-light {
+    --header-primary: var(--color8);
+    --header-secondary: var(--background);
+    --text-normal: var(--background);
+    --text-muted: var(--color8);
+    --text-link: var(--color12);
+    --channels-default: var(--background);
+	--interactive-hover: var(--color8);
+    --interactive-active: var(--color8);
+    --interactive-muted: var(--color8);
+    --background-primary: var(--color7);
+    --background-secondary: var(--foreground);
+    --background-secondary-alt: var(--foreground);
+    --background-tertiary: var(--color7);
+    --background-accent: var(--color7);
+    --background-floating: var(--color7);
+    --background-mobile-primary: var(--color7);
+    --background-mobile-secondary: var(--foreground);
+    --background-modifier-hover: rgba(79,84,92,0.16);
+    --background-modifier-active: rgba(79,84,92,0.24);
+    --background-modifier-selected: rgba(79,84,92,0.32);
+    --background-modifier-accent: hsla(0,0%,100%,0.06);
+    --background-mentioned: rgba(250,166,26,0.05);
+    --background-mentioned-hover: rgba(250,166,26,0.08);
+    --background-message-hover: rgba(4,4,5,0.07);
+    --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+    --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+    --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+    --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+    --logo-primary: #fff;
+    --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    --channeltextarea-background: var(--foreground);
+    --activity-card-background: #ff0000;
+    --textbox-markdown-syntax: var(--color8);
+    --deprecated-card-bg: rgba(32,34,37,0.6);
+    --deprecated-card-editable-bg: rgba(32,34,37,0.3);
+    --deprecated-store-bg: #36393f;
+    --deprecated-quickswitcher-input-background: var(--foreground);
+    --deprecated-quickswitcher-input-placeholder: var(--color8);
+    --deprecated-text-input-bg: rgba(0,0,0,0.1);
+    --deprecated-text-input-border: rgba(0,0,0,0.3);
+    --deprecated-text-input-border-hover: #040405;
+    --deprecated-text-input-border-disabled: #202225;
+    --deprecated-text-input-prefix: #dcddde;
+} /* end .theme-light */
+html body {
+	.appMount-3lHmkl, body, html {
+	    height: 100%;
+	    width: 100%;
+	} /* end .appMount-3lHmkl, body, html */
+
+	a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-weight: inherit;
+	    font-style: inherit;
+	    font-family: inherit;
+	    font-size: 100%;
+	    vertical-align: baseline;
+	} /* end a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var */
+
+	element {
+	} /* end element */
+
+	::placeholder, body, button, input, select, textarea {
+	    font-family: Fira Sans, Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	    text-rendering: optimizeLegibility;
+	} /* end ::placeholder, body, button, input, select, textarea */
+
+	::placeholder, body, button, input, select, textarea {
+	    font-family: Fira Sans, Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	    text-rendering: optimizeLegibility;
+	} /* end ::placeholder, body, button, input, select, textarea */
+
+	::-webkit-input-placeholder, body, button, input, select, textarea {
+	    font-family: Fira Sans, Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	    text-rendering: optimizeLegibility;
+	} /* end ::-webkit-input-placeholder, body, button, input, select, textarea */
+} /* end body */
+
+html body div#app-mount.appMount-3lHmkl {
+	element {
+
+	} /* end element */
+
+	.appMount-3lHmkl, body {
+	    background-color: var(--background-tertiary);
+	    text-rendering: optimizeLegibility;
+	} /* end .appMount-3lHmkl, body */
+
+	.appMount-3lHmkl, body, html {
+	    height: 100%;
+	    width: 100%;
+	} /* end .appMount-3lHmkl, body, html */
+
+	body {
+	    line-height: 1;
+	    margin: 0;
+	    padding: 0;
+	    font-family: Fira Sans, Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+	    overflow: hidden;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    background: transparent;
+	        background-color: transparent;
+	} /* end body */
+
+	a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-weight: inherit;
+	    font-style: inherit;
+	    font-family: inherit;
+	    font-size: 100%;
+	    vertical-align: baseline;
+	} /* end a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var */
+
+	a, button, div, input, select, span, strong, textarea {
+	    outline: 0;
+	} /* end a, button, div, input, select, span, strong, textarea */
+
+	a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+	    margin: 0;
+	    padding: 0;
+	    border: 0;
+	    font-weight: inherit;
+	    font-style: inherit;
+	    font-family: inherit;
+	    font-size: 100%;
+	    vertical-align: baseline;
+	} /* end a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var */
+} /* end body div#app-mount.appMount-3lHmkl
