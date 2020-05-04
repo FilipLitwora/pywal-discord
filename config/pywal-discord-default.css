@@ -201,4 +201,11 @@ html body div#app-mount.appMount-3lHmkl {
 	    font-size: 100%;
 	    vertical-align: baseline;
 	} /* end a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var */
-} /* end body div#app-mount.appMount-3lHmkl
+} /* end body div#app-mount.appMount-3lHmkl */
+
+.avatarSpeaking-3MqCHL{ /* fix speaking indicator */
+    -webkit-box-shadow: inset 0 0 0 2px var(--foreground),inset 0 0 0 3px var(--background-secondary);
+    box-shadow: inset 0 0 0 2px var(--foreground), inset 0 0 0 3px;
+}
+
+
