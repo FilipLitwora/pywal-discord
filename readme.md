@@ -16,7 +16,7 @@ cd python-pywal
 ### Theme made by <a href="https://github.com/abou123" target="_blank">abou123</a>
 to use this theme 
 ```
-./pywal-discord abou
+./pywal-discord -t abou
 ```
 [![gif](https://j.gifs.com/jZPm0W.gif)](https://youtu.be/2idHgpGWteA)
 
