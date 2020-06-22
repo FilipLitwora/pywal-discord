@@ -1,10 +1,17 @@
 #! /bin/bash
-
-if [ -e $HOME/.config/pywal-discord ]
+if [ ! ${EUID:-$(id -u)} -eq 0 ]
 then
-	rm -r $HOME/.config/pywal-discord
+    echo 'You must be root to run this script'
+    exit 1
 fi
 
-mkdir $HOME/.config/pywal-discord
-cp ./config/* $HOME/.config/pywal-discord
-sudo cp ./pywal-discord /usr/bin/
+installdir=/usr/share/pywal-discord
+
+if [ -e $installdir ]
+then
+	rm -rf $installdir
+fi
+
+mkdir $installdir
+cp ./config/* $installdir
+cp ./pywal-discord /usr/bin/
