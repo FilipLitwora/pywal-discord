@@ -7,6 +7,11 @@ fi
 
 installdir=/usr/share/pywal-discord
 
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Darwin*)    installdir=$HOME/.config/pywal-discord;;
+esac
+
 if [ -e $installdir ]
 then
 	rm -rf $installdir

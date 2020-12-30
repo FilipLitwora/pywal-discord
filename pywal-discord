@@ -1,6 +1,15 @@
 #!/bin/bash
 path="$HOME/.config/BetterDiscord/themes"
 theme="default"
+config="/usr/share/pywal-discord"
+
+unameOut="$(uname -s)"
+case "${unameOut}" in
+    Darwin*)    config="$HOME/.config/pywal-discord"
+                path="$HOME/Library/Preferences/BetterDiscord/themes"
+        ;;
+esac
+
 print_usage() {
   echo "Usage: $0 [-t theme] [-p path]"
   echo "-h                          Display this info"
@@ -18,8 +27,8 @@ while getopts 'p:vt:vh' flag; do
   esac
 done
 
-config=/usr/share/pywal-discord
 newfile=$path/pywal-discord-$theme.theme.css
+
 
 cat $config/meta.css $HOME/.cache/wal/colors.css $config/pywal-discord-$theme.css > $newfile 
 if [ ! -f $newfile ]
