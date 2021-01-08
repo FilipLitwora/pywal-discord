@@ -19,4 +19,9 @@ fi
 
 mkdir $installdir
 cp ./config/* $installdir
-cp ./pywal-discord /usr/bin/
+if [ "${unameOut}" == "Darwin" ]
+then
+	cp ./pywal-discord /usr/local/bin
+else
+	cp ./pywal-discord /usr/bin/
+fi
