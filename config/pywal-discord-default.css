@@ -121,13 +121,13 @@ element {
 
 /* Emoji picker body background */
 .emojiPickerInExpressionPicker-3IzIcv .emojiPicker-3PwZFl {
-    background-color: var(--background);
+	background-color: var(--background);
 }
 
 /* Emoji picker header background */
 .contentWrapper-SvZHNd {
-    background-color: var(--background);
-
+	background-color: var(--background);
+}
 
 /* Friends tab background */
 .theme-dark .container-1D34oG {
