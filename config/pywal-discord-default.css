@@ -62,6 +62,10 @@ element {
   --deprecated-text-input-border-hover: #040405;
   --deprecated-text-input-border-disabled: #202225;
   --deprecated-text-input-prefix: #dcddde;
+  --scrollbar-thin-thumb: var(--color1);
+  --scrollbar-auto-thumb: var(--color1);
+  --scrollbar-auto-track: rgba(255, 255, 255, 0.06);
+  --scrollbar-thin-track: rgba(255, 255, 255, 0.06);
 } /* end .theme-dark */
 
 .theme-light {
@@ -109,7 +113,54 @@ element {
   --deprecated-text-input-border-hover: #040405;
   --deprecated-text-input-border-disabled: #202225;
   --deprecated-text-input-prefix: #dcddde;
+  --scrollbar-thin-thumb: var(--color1);
+  --scrollbar-auto-thumb: var(--color1);
+  --scrollbar-auto-track: rgba(0, 0, 0, 0.1);
+  --scrollbar-thin-track: rgba(0, 0, 0, 0.1);
 } /* end .theme-light */
+
+/* Emoji picker body background */
+.emojiPickerInExpressionPicker-3IzIcv .emojiPicker-3PwZFl {
+	background-color: var(--background);
+}
+
+/* Emoji picker header background */
+.contentWrapper-SvZHNd {
+	background-color: var(--background);
+}
+
+/* Friends tab background */
+.theme-dark .container-1D34oG {
+	background-color: var(--background);
+}
+
+/* User popout body */
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
+	background-color: var(--background);
+}
+
+/* User popout header */
+.theme-dark .headerNormal-T_seeN {
+	background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* User popout header when playing a game */
+.headerPlaying-j0WQBV {
+	background: var(--color1);
+}
+
+/* Tab underneath users in the Active Now tab on the friends page */
+.theme-dark .inset-3sAvek {
+	background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Edit buttons in the settings page */
+.lookFilled-1Gx00P.colorGrey-2DXtkV {
+	color: #fff;
+	background-color: var(--color1);
+}
+
+
 
 .scroller-2FKFPG.sidebarRegionScroller-3MXcoP {
   /* Settings */
