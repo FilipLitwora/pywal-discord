@@ -17,6 +17,7 @@ element {
     var(--background);
 }
 .theme-dark {
+  --brand-experiment: var(--color1) 
   --header-primary: var(--foreground);
   --header-secondary: var(--color7);
   --text-normal: var(--color7);
@@ -69,6 +70,7 @@ element {
 } /* end .theme-dark */
 
 .theme-light {
+  --brand-experiment: var(--color1) 
   --header-primary: var(--color8);
   --header-secondary: var(--background);
   --text-normal: var(--background);
@@ -175,6 +177,30 @@ element {
 .lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
     background-color: var(--color1);
 }
+
+.botTagRegular-2HEhHi {
+    background: var(--color1);
+    color: var(--text);
+}
+
+.theme-dark .wrapper-3WhCwL {
+    background: var(--color9);
+    color: var(--text);
+}
+
+.reaction-1hd86g.reactionMe-wv5HKu {
+    background-color: var(--background);
+    border-color: var(--color4);
+}
+
+.newMessagesBar-265mhP {
+    top: 0;
+    border-radius: 0 0 8px 8px;
+    background-color: var(--color2);
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low);
+}
+
 /* End rebranding gross yuck */
 
 
