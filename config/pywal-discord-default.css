@@ -50,7 +50,7 @@ element {
   --logo-primary: #fff;
   --guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   --channeltextarea-background: var(--color8);
-  --activity-card-background: #ff0000;
+  --activity-card-background: var(--background);
   --textbox-markdown-syntax: var(--foreground);
   --deprecated-card-bg: rgba(32, 34, 37, 0.6);
   --deprecated-card-editable-bg: rgba(32, 34, 37, 0.3);
@@ -101,7 +101,7 @@ element {
   --logo-primary: #fff;
   --guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   --channeltextarea-background: var(--foreground);
-  --activity-card-background: #ff0000;
+  --activity-card-background: var(--background);
   --textbox-markdown-syntax: var(--color8);
   --deprecated-card-bg: rgba(32, 34, 37, 0.6);
   --deprecated-card-editable-bg: rgba(32, 34, 37, 0.3);
@@ -137,17 +137,46 @@ element {
 /* User popout body */
 .theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
 	background-color: var(--background);
+	opacity: 1 !important;
 }
 
 /* User popout header */
 .theme-dark .headerNormal-T_seeN {
-	background-color: rgba(255, 255, 255, 0.06);
+	background-color: var(--background);
+}
+
+/* Bottom part of user popout */
+.body-3ND3kc {
+	opacity: 1.0 !important;
+    background-color: var(--color0) !important;
 }
 
 /* User popout header when playing a game */
-.headerPlaying-j0WQBV {
+.headerPlaying-j0WQBV, .headerFill-adLl4x, .activityProfile-2bJRaP, .activity-1ythUs, .header-QKLPzZ {
 	background: var(--color1);
 }
+
+/* Start rebranding gross yuck */
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+    color: var(--text);
+    background-color: var(--color1);
+}
+
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+    color: var(--text);
+    background-color: var(--color2);
+}
+
+.lookFilled-1Gx00P.colorRed-1TFJan {
+    color: var(--text);
+    background-color: var(--color3);
+}
+
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+    background-color: var(--color1);
+}
+/* End rebranding gross yuck */
+
 
 /* Tab underneath users in the Active Now tab on the friends page */
 .theme-dark .inset-3sAvek {
@@ -161,8 +190,7 @@ element {
 }
 
 
-
-.scroller-2FKFPG.sidebarRegionScroller-3MXcoP {
+.scroller-2FKFPG.sidebarRegionScroller-3MXcoP{
   /* Settings */
   background: var(--darkbg);
 } /* end of settings */
@@ -456,8 +484,4 @@ html body div#app-mount.appMount-3lHmkl {
   -webkit-box-shadow: inset 0 0 0 2px var(--foreground),
     inset 0 0 0 3px var(--background-secondary);
   box-shadow: inset 0 0 0 2px var(--foreground), inset 0 0 0 3px;
-}
-
-.flex-1xMQg5.flex-1O1GKY.vertical-V37hAW.flex-1O1GKY.directionColumn-35P_nr.justifyCenter-3D2jYp.alignCenter-1dQNNs.noWrap-3jynv6.headerTop-3C2Zn0 {
-  background: var(--background-secondary);
 }
