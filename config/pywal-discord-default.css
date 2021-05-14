@@ -100,6 +100,19 @@ html.newBrand {
   --scrollbar-auto-thumb: var(--color1);
   --scrollbar-auto-track: rgba(255, 255, 255, 0.06);
   --scrollbar-thin-track: rgba(255, 255, 255, 0.06);
+  --text-positive: var(--color2);
+  --text-warning: var(--color4);
+  --text-danger: var(--color1);
+  --info-positive-background: rgba(59, 165, 92, 0.1);
+  --info-positive-foreground: var(--color2);
+  --info-warning-background: rgba(250, 166, 26, 0.1);
+  --info-warning-foreground: var(--color4);
+  --info-danger-background: rgba(237, 66, 69, 0.1);
+  --info-danger-foreground: var(--color1);
+  --status-positive-background: var(--color2);
+  --status-positive-text: var(--text);
+  --status-warning-background: var(--color4);
+  --status-danger-background: var(--color1);
 }
 
 /* end .theme-dark */
@@ -155,6 +168,19 @@ html.newBrand {
   --scrollbar-auto-thumb: var(--color1);
   --scrollbar-auto-track: rgba(0, 0, 0, 0.1);
   --scrollbar-thin-track: rgba(0, 0, 0, 0.1);
+  --text-positive: var(--color2);
+  --text-warning: var(--color4);
+  --text-danger: var(--color1);
+  --info-positive-background: rgba(59, 165, 92, 0.1);
+  --info-positive-foreground: var(--color2);
+  --info-warning-background: rgba(250, 166, 26, 0.1);
+  --info-warning-foreground: var(--color4);
+  --info-danger-background: rgba(237, 66, 69, 0.1);
+  --info-danger-foreground: var(--color1);
+  --status-positive-background: var(--color2);
+  --status-positive-text: var(--text);
+  --status-warning-background: var(--color4);
+  --status-danger-background: var(--color1);
 }
 
 /* end .theme-light */
