@@ -4,19 +4,53 @@
 
 element {
   font-size: 100%;
-} /* end element */
+}
+
+/* end element */
 :root {
   /* Yeah, I know lightbg is actually darker than darkbg but whatever
      * change & pull it if you wish */
-  --lightbg: linear-gradient(
-      rgba(255, 255, 255, 0.06),
-      rgba(255, 255, 255, 0.06)
-    ),
+  --lightbg: linear-gradient(rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.06)),
     var(--background);
   --darkbg: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
     var(--background);
+  --bdfdb-blurple: var(--color1);
 }
+
+html.newBrand {
+  --brand-experiment-100: var(--text);
+  --brand-experiment-130: var(--text);
+  --brand-experiment-160: var(--text);
+  --brand-experiment-200: var(--text);
+  --brand-experiment-230: var(--text);
+  --brand-experiment-260: var(--text);
+  --brand-experiment: var(--color1);
+  --brand-experiment-300: var(--color1);
+  --brand-experiment-330: var(--color1);
+  --brand-experiment-360: var(--color1);
+  --brand-experiment-400: var(--color1);
+  --brand-experiment-430: var(--color1);
+  --brand-experiment-460: var(--color1);
+  --brand-experiment: var(--color1);
+  --brand-experiment-500: var(--color1);
+  --brand-experiment-530: var(--color1);
+  --brand-experiment-560: var(--color1);
+  --brand-experiment-600: var(--color1);
+  --brand-experiment-630: var(--color1);
+  --brand-experiment-660: var(--color8);
+  --brand-experiment-700: var(--color8);
+  --brand-experiment-730: var(--color8);
+  --brand-experiment-760: var(--color8);
+  --brand-experiment-800: var(--background);
+  --brand-experiment-830: var(--background);
+  --brand-experiment-860: var(--background);
+  --brand-experiment-900: var(--background);
+}
+
 .theme-dark {
+  --brand-experiment: var(--color1);
+  --text-positive var(--color2);
   --header-primary: var(--foreground);
   --header-secondary: var(--color7);
   --text-normal: var(--color7);
@@ -50,7 +84,7 @@ element {
   --logo-primary: #fff;
   --guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   --channeltextarea-background: var(--color8);
-  --activity-card-background: #ff0000;
+  --activity-card-background: var(--background);
   --textbox-markdown-syntax: var(--foreground);
   --deprecated-card-bg: rgba(32, 34, 37, 0.6);
   --deprecated-card-editable-bg: rgba(32, 34, 37, 0.3);
@@ -66,9 +100,26 @@ element {
   --scrollbar-auto-thumb: var(--color1);
   --scrollbar-auto-track: rgba(255, 255, 255, 0.06);
   --scrollbar-thin-track: rgba(255, 255, 255, 0.06);
-} /* end .theme-dark */
+  --text-positive: var(--color2);
+  --text-warning: var(--color4);
+  --text-danger: var(--color1);
+  --info-positive-background: rgba(59, 165, 92, 0.1);
+  --info-positive-foreground: var(--color2);
+  --info-warning-background: rgba(250, 166, 26, 0.1);
+  --info-warning-foreground: var(--color4);
+  --info-danger-background: rgba(237, 66, 69, 0.1);
+  --info-danger-foreground: var(--color1);
+  --status-positive-background: var(--color2);
+  --status-positive-text: var(--text);
+  --status-warning-background: var(--color4);
+  --status-danger-background: var(--color1);
+}
+
+/* end .theme-dark */
 
 .theme-light {
+  --brand-experiment: var(--color1);
+  --text-positive var(--color2);
   --header-primary: var(--color8);
   --header-secondary: var(--background);
   --text-normal: var(--background);
@@ -101,7 +152,7 @@ element {
   --logo-primary: #fff;
   --guild-header-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   --channeltextarea-background: var(--foreground);
-  --activity-card-background: #ff0000;
+  --activity-card-background: var(--background);
   --textbox-markdown-syntax: var(--color8);
   --deprecated-card-bg: rgba(32, 34, 37, 0.6);
   --deprecated-card-editable-bg: rgba(32, 34, 37, 0.3);
@@ -117,63 +168,151 @@ element {
   --scrollbar-auto-thumb: var(--color1);
   --scrollbar-auto-track: rgba(0, 0, 0, 0.1);
   --scrollbar-thin-track: rgba(0, 0, 0, 0.1);
-} /* end .theme-light */
+  --text-positive: var(--color2);
+  --text-warning: var(--color4);
+  --text-danger: var(--color1);
+  --info-positive-background: rgba(59, 165, 92, 0.1);
+  --info-positive-foreground: var(--color2);
+  --info-warning-background: rgba(250, 166, 26, 0.1);
+  --info-warning-foreground: var(--color4);
+  --info-danger-background: rgba(237, 66, 69, 0.1);
+  --info-danger-foreground: var(--color1);
+  --status-positive-background: var(--color2);
+  --status-positive-text: var(--text);
+  --status-warning-background: var(--color4);
+  --status-danger-background: var(--color1);
+}
+
+/* end .theme-light */
 
 /* Emoji picker body background */
 .emojiPickerInExpressionPicker-3IzIcv .emojiPicker-3PwZFl {
-	background-color: var(--background);
+  background-color: var(--background);
 }
 
 /* Emoji picker header background */
 .contentWrapper-SvZHNd {
-	background-color: var(--background);
+  background-color: var(--background);
 }
 
 /* Friends tab background */
 .theme-dark .container-1D34oG {
-	background-color: var(--background);
+  background-color: var(--background);
 }
 
 /* User popout body */
-.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
-	background-color: var(--background);
+.theme-dark .body-3iLsc4,
+.theme-dark .footer-1fjuF6 {
+  background-color: var(--background);
+  opacity: 1 !important;
 }
 
 /* User popout header */
 .theme-dark .headerNormal-T_seeN {
-	background-color: rgba(255, 255, 255, 0.06);
+  background-color: var(--background);
+}
+
+/* Bottom part of user popout */
+.body-3ND3kc {
+  opacity: 1.0 !important;
+  background-color: var(--color0) !important;
 }
 
 /* User popout header when playing a game */
-.headerPlaying-j0WQBV {
-	background: var(--color1);
+.headerPlaying-j0WQBV,
+.headerFill-adLl4x,
+.activityProfile-2bJRaP,
+.activity-1ythUs,
+.header-QKLPzZ {
+  background: var(--color1);
 }
+
+/* Start rebranding gross yuck */
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+  color: var(--text);
+  background-color: var(--color1);
+}
+
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+  color: var(--text);
+  background-color: var(--color2);
+}
+
+.lookFilled-1Gx00P.colorRed-1TFJan {
+  color: var(--text);
+  background-color: var(--color3);
+}
+
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+  background-color: var(--color1);
+}
+
+.botTagRegular-2HEhHi {
+  background: var(--color1);
+  color: var(--text);
+}
+
+.theme-dark .wrapper-3WhCwL {
+  background: var(--darkbg);
+  color: var(--text);
+}
+
+.reaction-1hd86g.reactionMe-wv5HKu {
+  background-color: var(--background);
+  border-color: var(--color4);
+}
+
+.newMessagesBar-265mhP {
+  top: 0;
+  border-radius: 0 0 8px 8px;
+  background-color: var(--color2);
+  -webkit-box-shadow: var(--elevation-low);
+  box-shadow: var(--elevation-low);
+}
+
+.rtcConnectionStatusConnected-VRZDjy,
+.rtcConnectionQualityFine-2J6i8z,
+.pingForeground-2uAOZ3 {
+  color: var(--color2);
+}
+
+.lookFilled-1Gx00P.colorYellow-2JqYwt {
+  color: var(--text);
+  background-color: var(--color4);
+}
+
+/* End rebranding gross yuck */
+
 
 /* Tab underneath users in the Active Now tab on the friends page */
 .theme-dark .inset-3sAvek {
-	background-color: rgba(255, 255, 255, 0.06);
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 /* Edit buttons in the settings page */
 .lookFilled-1Gx00P.colorGrey-2DXtkV {
-	color: #fff;
-	background-color: var(--color1);
+  color: #fff;
+  background-color: var(--color1);
 }
-
 
 
 .scroller-2FKFPG.sidebarRegionScroller-3MXcoP {
   /* Settings */
   background: var(--darkbg);
-} /* end of settings */
+}
+
+/* end of settings */
 
 html body {
+
   .appMount-3lHmkl,
   body,
   html {
     height: 100%;
     width: 100%;
-  } /* end .appMount-3lHmkl, body, html */
+  }
+
+  /* end .appMount-3lHmkl, body, html */
 
   a,
   abbr,
@@ -238,21 +377,13 @@ html body {
     font-family: inherit;
     font-size: 100%;
     vertical-align: baseline;
-  } /* end a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var */
+  }
 
-  element {
-  } /* end element */
+  /* end a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var */
 
-  ::placeholder,
-  body,
-  button,
-  input,
-  select,
-  textarea {
-    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
-    text-rendering: optimizeLegibility;
-  } /* end ::placeholder, body, button, input, select, textarea */
+  element {}
+
+  /* end element */
 
   ::placeholder,
   body,
@@ -263,7 +394,22 @@ html body {
     font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
       sans-serif;
     text-rendering: optimizeLegibility;
-  } /* end ::placeholder, body, button, input, select, textarea */
+  }
+
+  /* end ::placeholder, body, button, input, select, textarea */
+
+  ::placeholder,
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* end ::placeholder, body, button, input, select, textarea */
 
   ::-webkit-input-placeholder,
   body,
@@ -274,25 +420,34 @@ html body {
     font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
       sans-serif;
     text-rendering: optimizeLegibility;
-  } /* end ::-webkit-input-placeholder, body, button, input, select, textarea */
-} /* end body */
+  }
+
+  /* end ::-webkit-input-placeholder, body, button, input, select, textarea */
+}
+
+/* end body */
 
 html body div#app-mount.appMount-3lHmkl {
-  element {
-  } /* end element */
+  element {}
+
+  /* end element */
 
   .appMount-3lHmkl,
   body {
     background-color: var(--background-tertiary);
     text-rendering: optimizeLegibility;
-  } /* end .appMount-3lHmkl, body */
+  }
+
+  /* end .appMount-3lHmkl, body */
 
   .appMount-3lHmkl,
   body,
   html {
     height: 100%;
     width: 100%;
-  } /* end .appMount-3lHmkl, body, html */
+  }
+
+  /* end .appMount-3lHmkl, body, html */
 
   body {
     line-height: 1;
@@ -307,7 +462,9 @@ html body div#app-mount.appMount-3lHmkl {
     user-select: none;
     background: transparent;
     background-color: transparent;
-  } /* end body */
+  }
+
+  /* end body */
 
   a,
   abbr,
@@ -372,7 +529,9 @@ html body div#app-mount.appMount-3lHmkl {
     font-family: inherit;
     font-size: 100%;
     vertical-align: baseline;
-  } /* end a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var */
+  }
+
+  /* end a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var */
 
   a,
   button,
@@ -383,7 +542,9 @@ html body div#app-mount.appMount-3lHmkl {
   strong,
   textarea {
     outline: 0;
-  } /* end a, button, div, input, select, span, strong, textarea */
+  }
+
+  /* end a, button, div, input, select, span, strong, textarea */
 
   a,
   abbr,
@@ -448,16 +609,16 @@ html body div#app-mount.appMount-3lHmkl {
     font-family: inherit;
     font-size: 100%;
     vertical-align: baseline;
-  } /* end a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var */
-} /* end body div#app-mount.appMount-3lHmkl */
+  }
+
+  /* end a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var */
+}
+
+/* end body div#app-mount.appMount-3lHmkl */
 
 .avatarSpeaking-2IGMRN {
   /* fix speaking indicator */
   -webkit-box-shadow: inset 0 0 0 2px var(--foreground),
     inset 0 0 0 3px var(--background-secondary);
   box-shadow: inset 0 0 0 2px var(--foreground), inset 0 0 0 3px;
-}
-
-.flex-1xMQg5.flex-1O1GKY.vertical-V37hAW.flex-1O1GKY.directionColumn-35P_nr.justifyCenter-3D2jYp.alignCenter-1dQNNs.noWrap-3jynv6.headerTop-3C2Zn0 {
-  background: var(--background-secondary);
 }
