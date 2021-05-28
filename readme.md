@@ -14,6 +14,12 @@ Pywal-discord is a tool that makes and applies theme to discord with colors gene
 
 #### Installation:
 
+##### Arch Linux
+
+`pywal-discord` is available in the Arch Linux repos as `pywal-discord-git`.
+
+##### Manual/Git install
+
 ```
 cd pywal-discord
 ./install
