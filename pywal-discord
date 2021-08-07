@@ -11,14 +11,16 @@ case "${unameOut}" in
 esac
 
 print_usage() {
-  echo "Usage: $0 [-t theme] [-p path]"
+  echo "Usage: $0 [-d] [-t theme] [-p path]"
   echo "-h                          Display this info"
   echo "-t theme                    Available: [default,abou]"
   echo "-p path/to/folder/or/file   Path where pywal-discord will generate theme. Default: $path"
+  echo "-d                          Make path directory as needed"
 }
 
-while getopts 'p:vt:vh' flag; do
+while getopts 'dp:vt:vh' flag; do
   case "${flag}" in
+    d) mkdir -p $path ;;
     p) path="${OPTARG}" ;;
     t) theme="${OPTARG}" ;;
     h) print_usage ;;
