@@ -50,7 +50,7 @@ html.newBrand {
 
 .theme-dark {
   --brand-experiment: var(--color1);
-  --text-positive var(--color2);
+  --text-positive: var(--color2);
   --header-primary: var(--foreground);
   --header-secondary: var(--color7);
   --text-normal: var(--color7);
@@ -119,7 +119,7 @@ html.newBrand {
 
 .theme-light {
   --brand-experiment: var(--color1);
-  --text-positive var(--color2);
+  --text-positive: var(--color2);
   --header-primary: var(--color8);
   --header-secondary: var(--background);
   --text-normal: var(--background);
@@ -184,6 +184,20 @@ html.newBrand {
 }
 
 /* end .theme-light */
+
+/* background of search*/
+.theme-dark .container-3ayLPN {
+  background-color: var(--background);
+}
+/* remove fade on search hover */
+.option-96V44q:after {
+    content: none;
+}
+
+/*  background on search hover */
+.theme-dark .option-96V44q {
+  background-color: var(--colour0);
+}
 
 /* Emoji picker body background */
 .emojiPickerInExpressionPicker-3IzIcv .emojiPicker-3PwZFl {
