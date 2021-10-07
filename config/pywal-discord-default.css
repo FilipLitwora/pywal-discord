@@ -195,10 +195,9 @@ html.newBrand {
 }
 
 /*  background on search hover */
-.theme-dark .option-96V44q {
-  background-color: var(--colour0);
+.theme-dark .option-96V44q.selected-rZcOL- {
+	background-color: var(--color1);
 }
-
 /* Emoji picker body background */
 .emojiPickerInExpressionPicker-3IzIcv .emojiPicker-3PwZFl {
   background-color: var(--background);
