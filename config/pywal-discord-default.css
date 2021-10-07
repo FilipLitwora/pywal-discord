@@ -10,11 +10,8 @@ element {
 :root {
   /* Yeah, I know lightbg is actually darker than darkbg but whatever
      * change & pull it if you wish */
-  --lightbg: linear-gradient(rgba(255, 255, 255, 0.06),
-      rgba(255, 255, 255, 0.06)),
-    var(--background);
-  --darkbg: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
-    var(--background);
+  --lightbg: linear-gradient(rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.06)), var(--background);
+  --darkbg: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), var(--background);
   --bdfdb-blurple: var(--color1);
 }
 
@@ -50,7 +47,7 @@ html.newBrand {
 
 .theme-dark {
   --brand-experiment: var(--color1);
-  --text-positive var(--color2);
+  --text-positive: var(--color2);
   --header-primary: var(--foreground);
   --header-secondary: var(--color7);
   --text-normal: var(--color7);
@@ -77,8 +74,7 @@ html.newBrand {
   --background-mentioned-hover: rgba(250, 166, 26, 0.08);
   --background-message-hover: rgba(4, 4, 5, 0.07);
   --elevation-stroke: 0 0 0 1px rgba(4, 4, 5, 0.15);
-  --elevation-low: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05),
-    0 2px 0 rgba(4, 4, 5, 0.05);
+  --elevation-low: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
   --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.16);
   --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
   --logo-primary: #fff;
@@ -119,7 +115,7 @@ html.newBrand {
 
 .theme-light {
   --brand-experiment: var(--color1);
-  --text-positive var(--color2);
+  --text-positive: var(--color2);
   --header-primary: var(--color8);
   --header-secondary: var(--background);
   --text-normal: var(--background);
@@ -145,8 +141,7 @@ html.newBrand {
   --background-mentioned-hover: rgba(250, 166, 26, 0.08);
   --background-message-hover: rgba(4, 4, 5, 0.07);
   --elevation-stroke: 0 0 0 1px rgba(4, 4, 5, 0.15);
-  --elevation-low: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05),
-    0 2px 0 rgba(4, 4, 5, 0.05);
+  --elevation-low: 0 1px 0 rgba(4, 4, 5, 0.2), 0 1.5px 0 rgba(6, 6, 7, 0.05), 0 2px 0 rgba(4, 4, 5, 0.05);
   --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.16);
   --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
   --logo-primary: #fff;
@@ -185,6 +180,21 @@ html.newBrand {
 
 /* end .theme-light */
 
+/* background of search container */
+.theme-dark .container-3ayLPN {
+  background-color: var(--background);
+}
+
+/*  background on search result hover */
+.theme-dark .option-96V44q {
+  background-color: var(--colour0);
+}
+
+/* remove fade on search container hover */
+.option-96V44q:after {
+  content: none;
+}
+
 /* Emoji picker body background */
 .emojiPickerInExpressionPicker-3IzIcv .emojiPicker-3PwZFl {
   background-color: var(--background);
@@ -214,7 +224,7 @@ html.newBrand {
 
 /* Bottom part of user popout */
 .body-3ND3kc {
-  opacity: 1.0 !important;
+  opacity: 1 !important;
   background-color: var(--color0) !important;
 }
 
@@ -283,7 +293,6 @@ html.newBrand {
 
 /* End rebranding gross yuck */
 
-
 /* Tab underneath users in the Active Now tab on the friends page */
 .theme-dark .inset-3sAvek {
   background-color: rgba(255, 255, 255, 0.06);
@@ -295,7 +304,6 @@ html.newBrand {
   background-color: var(--color1);
 }
 
-
 .scroller-2FKFPG.sidebarRegionScroller-3MXcoP {
   /* Settings */
   background: var(--darkbg);
@@ -304,7 +312,6 @@ html.newBrand {
 /* end of settings */
 
 html body {
-
   .appMount-3lHmkl,
   body,
   html {
@@ -381,7 +388,8 @@ html body {
 
   /* end a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, table, tbody, td, tfoot, th, thead, tr, tt, ul, var */
 
-  element {}
+  element {
+  }
 
   /* end element */
 
@@ -391,8 +399,7 @@ html body {
   input,
   select,
   textarea {
-    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
+    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
     text-rendering: optimizeLegibility;
   }
 
@@ -404,8 +411,7 @@ html body {
   input,
   select,
   textarea {
-    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
+    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
     text-rendering: optimizeLegibility;
   }
 
@@ -417,8 +423,7 @@ html body {
   input,
   select,
   textarea {
-    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
+    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
     text-rendering: optimizeLegibility;
   }
 
@@ -428,7 +433,8 @@ html body {
 /* end body */
 
 html body div#app-mount.appMount-3lHmkl {
-  element {}
+  element {
+  }
 
   /* end element */
 
@@ -453,8 +459,7 @@ html body div#app-mount.appMount-3lHmkl {
     line-height: 1;
     margin: 0;
     padding: 0;
-    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial,
-      sans-serif;
+    font-family: Fira Sans, Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
     overflow: hidden;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -618,7 +623,6 @@ html body div#app-mount.appMount-3lHmkl {
 
 .avatarSpeaking-2IGMRN {
   /* fix speaking indicator */
-  -webkit-box-shadow: inset 0 0 0 2px var(--foreground),
-    inset 0 0 0 3px var(--background-secondary);
+  -webkit-box-shadow: inset 0 0 0 2px var(--foreground), inset 0 0 0 3px var(--background-secondary);
   box-shadow: inset 0 0 0 2px var(--foreground), inset 0 0 0 3px;
 }
