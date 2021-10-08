@@ -198,6 +198,17 @@ html.newBrand {
 .theme-dark .option-96V44q.selected-rZcOL- {
 	background-color: var(--color1);
 }
+
+/* upload container top */
+.theme-dark .footer-3mqk7D {
+  background-color: var(--background);
+}
+
+/* upload container bottom */
+.theme-dark .uploadModal-2ifh8j {
+  background-color: var(--background);
+}
+
 /* Emoji picker body background */
 .emojiPickerInExpressionPicker-3IzIcv .emojiPicker-3PwZFl {
   background-color: var(--background);
