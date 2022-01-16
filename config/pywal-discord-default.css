@@ -2,6 +2,15 @@
  *  see: cat $HOME/.cache/wal/colors.css
 */
 
+/* firends page */
+.peopleList-2VBrVI, .inner-2pOSmK {
+    background: var(--darkbg);
+}
+
+.peopleColumn-1wMU14{
+    background: var(--color0);
+}
+
 element {
   font-size: 100%;
 }
@@ -616,7 +625,7 @@ html body div#app-mount.appMount-3lHmkl {
 
 /* end body div#app-mount.appMount-3lHmkl */
 
-.avatarSpeaking-2IGMRN {
+.avatarSpeaking-2pCGrZ {
   /* fix speaking indicator */
   -webkit-box-shadow: inset 0 0 0 2px var(--foreground),
     inset 0 0 0 3px var(--background-secondary);
