@@ -2,11 +2,13 @@
 path="$HOME/.config/BetterDiscord/themes"
 theme="default"
 config="/usr/share/pywal-discord"
+usrconfig="$HOME/.config/pywal-discord"
 
 unameOut="$(uname -s)"
 case "${unameOut}" in
     Darwin*)    config="$HOME/.config/pywal-discord"
                 path="$HOME/Library/Preferences/BetterDiscord/themes"
+                usrconfig="$HOME/.config/pywal-discord-themes"
         ;;
 esac
 
@@ -20,7 +22,7 @@ print_usage() {
 
 while getopts 'dp:vt:vh' flag; do
   case "${flag}" in
-    d) mkdir -p $path ;;
+    d) mkdir -p "$path" ;;
     p) path="${OPTARG}" ;;
     t) theme="${OPTARG}" ;;
     h) print_usage ;;
@@ -29,11 +31,19 @@ while getopts 'dp:vt:vh' flag; do
   esac
 done
 
+# Try to use a user defined theme if it exists
+themefile=$usrconfig/pywal-discord-$theme.css
+if [ ! -f "$themefile" ]; then
+  themefile=$config/pywal-discord-$theme.css
+fi
+
 newfile=$path/pywal-discord-$theme.theme.css
 
+# Adapt metadata to theme
+sed "s/@name Pywal-Discord/@name Pywal-Discord-$theme/" "$config/meta.css" > /tmp/pywal-discord-meta
 
-cat $config/meta.css $HOME/.cache/wal/colors.css $config/pywal-discord-$theme.css > $newfile 
-if [ ! -f $newfile ]
+cat /tmp/pywal-discord-meta "$HOME/.cache/wal/colors.css" "$themefile" > "$newfile" 
+if [ ! -f "$newfile" ]
 then
     echo ⚠️ THEME WAS NOT CREATED ⚠️ 
     echo Try to change path with -p because $path doesn\'t exist, or add -d to create it

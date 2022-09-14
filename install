@@ -6,19 +6,25 @@ then
 fi
 
 installdir=/usr/share/pywal-discord
+themesdir=$HOME/.config/pywal-discord
 
 unameOut="$(uname -s)"
 case "${unameOut}" in
-    Darwin*)    installdir=$HOME/.config/pywal-discord;;
+    Darwin*)
+        installdir=$HOME/.config/pywal-discord
+        themesdir=$HOME/.config/pywal-discord-themes
+        ;;
 esac
 
-if [ -e $installdir ]
+mkdir -p "$themesdir"
+
+if [ -e "$installdir" ]
 then
-	rm -rf $installdir
+	rm -rf "$installdir"
 fi
 
-mkdir $installdir
-cp ./config/* $installdir
+mkdir "$installdir"
+cp ./config/* "$installdir"
 if [ "${unameOut}" == "Darwin" ]
 then
 	cp ./pywal-discord /usr/local/bin
